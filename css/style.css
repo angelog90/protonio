@@ -1,0 +1,162 @@
+#headerid{
+    background-color: black;
+    color: white;
+    font-size: 1em;
+}
+
+#main{
+    min-height: calc(100vh - 150px);
+}
+
+#contact{
+    display: inline-block;
+}
+
+#navbar {
+    background-color: #FA744F;
+}
+
+#contactsec{
+    background-color: #ececea;
+}
+
+#social{
+    text-align: end;
+    display: inline-block;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+h1{
+    font-size: 5em;
+    font-weight: bolder;
+}
+
+p{
+    white-space: nowrap;
+    font-size: 1em;
+}
+
+#footer{
+    background-color: black;
+    color: white;
+}
+
+.teach{
+    border: solid;
+    border-radius: 10px;
+    margin-left: 4em;
+}
+
+#con{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#address, #numbers, #form{
+    padding:0.5rem 1rem 0.5rem 1rem;
+    text-align: center;
+}
+
+input::placeholder{
+    opacity: 0.5;
+}
+
+#form{
+    background-color: #FA744F; 
+    border-radius: 5%;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.contact-inputs{
+    width: 300px;
+    border: none;
+    outline:none;
+    padding-left: 20px;
+    font-weight: 450;
+    border-radius: 50px;
+}
+
+.contact textarea{
+    height: 150px;
+    border-radius: 20px;
+}
+
+.contact-inputs:focus{
+    border: 2px solid #c44d09;
+}
+
+.contact button{
+    display: flex;
+    border: 1px solid #c44d09;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: "Farfetch Basis","Helvetica Neue",Arial,sans-serif;
+    box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+    box-sizing: border-box;
+}
+
+button:hover {
+    border: 2px solid #c44d09;
+    box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+    transform: translateY(-2px);
+  }
+
+
+@media (max-width: 992px) {
+    #social{
+        text-align: center;
+    }
+    .teach{
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    #contact{
+        display: block;
+        text-align: center;
+    }
+    #form{
+        width: max-content;
+    }
+    #con{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #main div img{
+        margin-top: 15%;
+    }
+
+}
+
+@media (max-width: 776px) {
+    #con, #numbers{
+        display: block;
+    }
+
+    .teach{
+        margin-left: 0;
+    }
+
+    #con{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #main div img{
+        width: 350px;
+        margin-top: 25%;
+    }
+}
